@@ -7,3 +7,8 @@ class stock_info():
 		self.number = ""
 		self.Company = ""
 		self.Symbol = ""
+
+response = requests.get("https://www.slickcharts.com/sp500").text
+
+soup = BeautifulSoup(response, "lxml")
+
